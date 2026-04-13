@@ -8,7 +8,7 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'UI Challenges', home: const HomePage());
+    return MaterialApp(title: 'UI Challenges', debugShowCheckedModeBanner: false, home: const HomePage());
   }
 }
 

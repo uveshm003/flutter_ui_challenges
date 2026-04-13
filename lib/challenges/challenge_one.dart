@@ -14,7 +14,7 @@ class ChallengeOne extends StatelessWidget {
         ),
         child: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 50),
+            padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 80),
             child: SingleChildScrollView(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -62,6 +62,32 @@ class ChallengeOne extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 30),
+                  InkWell(
+                    child: Container(
+                      decoration: BoxDecoration(color: Color(0XFF533EDE), borderRadius: BorderRadius.circular(5)),
+                      child: Center(
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 12),
+                          child: Text('SIGN UP', style: TextStyle(fontSize: 22, color: Colors.white)),
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 10),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Already Signed Up?  ',
+                        style: TextStyle(fontSize: 16, color: Colors.black, fontWeight: FontWeight.w300),
+                      ),
+
+                      Text(
+                        'Log in',
+                        style: TextStyle(fontSize: 16, color: Color(0XFF3D28CF), fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ),
