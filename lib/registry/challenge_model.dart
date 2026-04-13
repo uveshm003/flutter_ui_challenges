@@ -11,6 +11,4 @@ class Challenge {
   const Challenge({required this.title, required this.category, required this.builder, required this.description, this.isMobile = true});
 }
 
-final List<Challenge> registry = [
-  Challenge(title: 'Bottom Nav', category: 'Navigation', builder: (_) => const BottomNavChallenge(), description: ''),
-];
+final List<Challenge> registry = [Challenge(title: 'Screen', category: 'Screen', builder: (_) => const ChallengeOne(), description: '')];
