@@ -224,7 +224,8 @@ class _CategoryGroup extends StatelessWidget {
             children: [
               for (int i = 0; i < challenges.length; i++) ...[
                 _ChallengeTile(challenge: challenges[i], dotColor: dotColor, onTap: () => onTap(challenges[i])),
-                if (i < challenges.length - 1) Divider(height: 1, indent: 36, endIndent: 14, color: Theme.of(context).dividerColor.withOpacity(0.5)),
+                if (i < challenges.length - 1)
+                  Divider(height: 1, indent: 14, endIndent: 14, color: Theme.of(context).dividerColor.withValues(alpha: 0.5)),
               ],
             ],
           ),
@@ -248,7 +249,7 @@ class _ChallengeTile extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 11),
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 16),
         child: Row(
           children: [
             Container(
@@ -260,16 +261,7 @@ class _ChallengeTile extends StatelessWidget {
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(challenge.title, style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w500)),
-                  const SizedBox(height: 1),
-                  Text(
-                    challenge.description,
-                    style: TextStyle(fontSize: 11, color: Theme.of(context).colorScheme.onSurfaceVariant),
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                ],
+                children: [Text(challenge.title, style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w500))],
               ),
             ),
             const SizedBox(width: 8),
