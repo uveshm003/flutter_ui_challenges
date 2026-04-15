@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/challenges/challenge_one.dart';
+import 'package:flutter_ui_challenges/challenges/challenge_three.dart';
 import 'package:flutter_ui_challenges/challenges/challenge_two.dart';
 
 class Challenge {
@@ -15,4 +16,5 @@ class Challenge {
 final List<Challenge> registry = [
   Challenge(title: 'Challenge One', category: '100 Days', builder: (_) => const ChallengeOne(), description: ''),
   Challenge(title: 'Challenge Two', category: '100 Days', builder: (_) => const ChallengeTwo(), description: ''),
+  Challenge(title: 'Challenge Three', category: '100 Days', builder: (_) => const ChallengeThree(), description: ''),
 ];
