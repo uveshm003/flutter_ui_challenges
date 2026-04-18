@@ -17,4 +17,5 @@ final List<Challenge> registry = [
   Challenge(title: 'Challenge One', category: '100 Days', builder: (_) => const ChallengeOne(), description: ''),
   Challenge(title: 'Challenge Two', category: '100 Days', builder: (_) => const ChallengeTwo(), description: ''),
   Challenge(title: 'Challenge Three', category: '100 Days', builder: (_) => const ChallengeThree(), description: ''),
+  Challenge(title: 'Challenge Four', category: '100 Days', builder: (_) => const ChallengeThree(), description: ''),
 ];
